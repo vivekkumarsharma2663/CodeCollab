@@ -7,6 +7,7 @@ import {
 import Home from "./pages/Home";
 import CreateRoom from "./pages/CreateRoom";
 import JoinRoom from "./pages/JoinRoom";
+import Editor from "./pages/Editor";
 
 
 function App(){
@@ -18,6 +19,8 @@ function App(){
         <Route path="/create-room" element={<CreateRoom/>}/>
 
         <Route path="/join-room" element={<JoinRoom/>}/>
+
+        <Route path="/editor/:roomid" element={<Editor/>}/>
       </Routes>
     </BrowserRouter>
   );

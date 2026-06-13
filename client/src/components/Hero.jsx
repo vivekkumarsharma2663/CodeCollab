@@ -1,13 +1,19 @@
+import Button from "./Button";
+import {useNavigate} from "react-router-dom";
 function Hero(){
+    const navigate=useNavigate();
     return(
         <div>
-            <h2>COde Together.</h2>
-
+        
+            <h1>CodeCollab</h1>
             <p>Real-Time Collaborative Coding Platform</p>
 
-            <button>Create Room</button>
-
-            <button>Join Room</button>
+            <Button text="Create Room"
+                    onClick={()=>navigate("/create-room")}
+            />
+            <Button text="Join Room"
+                    onClick={()=>navigate("/join-room")}
+            />
         </div>
     );
 }
