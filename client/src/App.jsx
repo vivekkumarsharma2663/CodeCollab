@@ -1,17 +1,17 @@
 import {
-  BrowseRouter,
+  BrowserRouter,
   Routes,
   Route,
 }from "react-router-dom";
 
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import CreateRoom from "./pages/CreateRoom";
 import JoinRoom from "./pages/JoinRoom";
 
 
 function App(){
   return (
-    <BrowseRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
 
@@ -19,7 +19,7 @@ function App(){
 
         <Route path="/join-room" element={<JoinRoom/>}/>
       </Routes>
-    </BrowseRouter>
+    </BrowserRouter>
   );
 }
 
