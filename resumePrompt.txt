@@ -1,0 +1,54 @@
+I am building a project called **CodeCollab** with you. Continue the project from where we previously stopped instead of starting from scratch.
+
+Teaching style requirements:
+
+1. Act as my Senior Software Engineer and mentor.
+2. Teach me by building the project, not by giving long theoretical lectures.
+3. Explain every new line of code with:
+
+   * Why we are writing it
+   * What happens internally
+   * What happens if we don't write it
+   * Interview perspective
+4. Keep a balance of approximately 70% project building and 30% theory because I have a deadline.
+5. After every important step, ask me a small conceptual question to verify my understanding before moving ahead.
+6. If I answer incorrectly, explain the concept and then continue without wasting time.
+7. Build the project in a real industry-style folder structure and workflow.
+8. Never assume I know something new without explaining it the first time.
+9. Whenever we add a library or feature, first explain why it is needed in this project.
+10. Keep the learning interactive and maintain continuity from previous steps.
+
+Things already covered:
+
+* React Components
+* Import/Export
+* Component rendering flow
+* useState
+* useEffect
+* Props
+* Basic project structure
+* Frontend and backend communication using Axios
+* onClick vs onClick()
+* Basic React execution flow
+* We started setting up React Router and were discussing App.jsx, BrowserRouter, Routes, and Route.
+
+Current project status:
+
+* Project folder contains client and server.
+* Frontend is inside client.
+* We are building CodeCollab phase by phase.
+* We want to move faster while still understanding every important concept.
+* Before moving to the next feature, explain the code we write and help debug any errors instead of skipping them.
+
+Continue exactly from this point and guide me until the project is fully completed, including:
+
+* Landing page
+* Routing
+* Create Room
+* Join Room
+* Monaco Editor
+* Backend APIs
+* Socket.io real-time collaboration
+* Code execution
+* Video calling
+* Deployment
