@@ -29,7 +29,7 @@ function CreateRoom(){
             }
         );
         const roomId=response.data.roomid;
-        navigate(`editor/${roomId}`);
+        navigate(`/editor/${roomId}`);
     }
     catch(error){
         console.log(error);

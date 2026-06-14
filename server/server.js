@@ -25,6 +25,24 @@ app.post("/create-room",(req,res)=>{
         language
     });
 });
+
+app.post("/run-code",(req,res)=>{
+
+    const {code,language}=req.body;
+
+    console.log(code);
+
+    console.log(language);
+
+    res.json({
+
+        success:true,
+
+        output:"Backend received successfully"
+
+    });
+
+});
 const PORT = 5000;
 
 app.listen(PORT, () => {
