@@ -1,23 +1,41 @@
+const { executeCode } = require("../services/pistonServices");
+
 async function runCode(req, res) {
 
-    const { code, language } = req.body;
+    try {
 
-    console.log(code);
+        console.log("===== Request Received =====");
 
-    console.log(language);
+        const { code, language } = req.body;
 
-    res.json({
+        console.log("Language:", language);
+        console.log("Code:", code);
 
-        success: true,
+        const output = await executeCode(language, code);
 
-        output: "Backend received successfully"
+        console.log("Output:", output);
 
-    });
+        res.json({
+            success: true,
+            output
+        });
+
+    } catch (error) {
+
+        console.log("========== ERROR ==========");
+        console.log(error);
+        console.log(error.message);
+        console.log("===========================");
+
+        res.status(500).json({
+            success: false,
+            message: error.message
+        });
+
+    }
 
 }
 
 module.exports = {
-
     runCode
-
 };

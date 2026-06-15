@@ -103,7 +103,7 @@ function Editor() {
                 </select>
 
                 <button onClick={handlerunCode}>
-                    Run Code
+                    Run
                 </button>
 
                 </div>
