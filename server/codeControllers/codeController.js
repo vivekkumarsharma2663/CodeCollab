@@ -1,41 +1,17 @@
-const { executeCode } = require("../services/pistonServices");
+const { executeCode } = require("../services/judge0Services");
 
-async function runCode(req, res) {
+const runCode = async (req, res) => {
+  try {
+    const { language, code } = req.body;
 
-    try {
+    const output = await executeCode(language, code);
 
-        console.log("===== Request Received =====");
-
-        const { code, language } = req.body;
-
-        console.log("Language:", language);
-        console.log("Code:", code);
-
-        const output = await executeCode(language, code);
-
-        console.log("Output:", output);
-
-        res.json({
-            success: true,
-            output
-        });
-
-    } catch (error) {
-
-        console.log("========== ERROR ==========");
-        console.log(error);
-        console.log(error.message);
-        console.log("===========================");
-
-        res.status(500).json({
-            success: false,
-            message: error.message
-        });
-
-    }
-
-}
-
-module.exports = {
-    runCode
+    res.json({ output });
+  } catch (error) {
+    res.status(500).json({
+      message: error.message
+    });
+  }
 };
+
+module.exports = { runCode };
