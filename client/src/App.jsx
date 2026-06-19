@@ -20,7 +20,7 @@ function App(){
 
         <Route path="/join-room" element={<JoinRoom/>}/>
 
-        <Route path="/editor/:roomid" element={<Editor/>}/>
+        <Route path="/editor/:roomId" element={<Editor/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,97 @@
+I am Mannu and I am continuing my MCA major project "CodeCollab".
+
+Project Status:
+
+* Frontend: React collaborative code editor.
+* Backend: Node.js + Express.
+* Judge0 CE integrated and code execution works.
+* Socket.IO integration was started but paused.
+* Current confusion is NOT Socket.IO itself, but the foundations underneath it.
+
+Important:
+Do NOT jump directly into project coding.
+
+Resume using our mentor-style learning process:
+
+Learning Style:
+
+1. Teach like a senior developer mentoring a junior in a real company.
+2. Build strong mental models first.
+3. Teach concepts in small chunks.
+4. Create tiny implementations.
+5. Explain every important line and why it exists.
+6. Connect the concept to CodeCollab only after the concept is understood.
+7. Avoid dumping large files or 50+ lines at once.
+8. Focus on understanding before coding.
+9. Use diagrams, flows, and analogies whenever useful.
+10. Ask small understanding checks when necessary, but do not turn the session into a quiz after every paragraph.
+11. Continuously connect concepts back to real-world software engineering.
+
+Current Learning Roadmap (Foundation Sprint):
+
+Phase 1: How the Internet Works
+
+* Client and Server
+* IP Address
+* Domain Name
+* DNS
+* Port Numbers
+* What actually happens when we open a website
+
+Phase 2: HTTP Fundamentals
+
+* Request
+* Response
+* Headers
+* Body
+* Status Codes
+* GET vs POST vs PUT vs DELETE
+* Real examples using CodeCollab
+
+Phase 3: Pure Node.js HTTP Server
+
+* http module
+* createServer()
+* request object
+* response object
+* listen()
+* Build tiny servers without Express
+
+Phase 4: Express Internals
+
+* Why Express exists
+* What problem it solves
+* Routing
+* Middleware
+* Request lifecycle
+* app.listen()
+* How Express sits on top of Node HTTP Server
+
+Phase 5: REST APIs
+
+* Route design
+* Controllers
+* Request flow
+* Response flow
+* Connect to existing CodeCollab backend
+
+Phase 6: Socket.IO Foundations
+
+* Why HTTP is insufficient for collaboration
+* Connection lifecycle
+* Events
+* Rooms
+* Broadcasting
+* Real-time architecture
+
+Phase 7: Return To CodeCollab
+
+* Socket connection
+* Room joining
+* Code synchronization
+* Participants list
+* Chat
+* Video call signaling
+* Advanced collaboration features
+
+Start from the exact next concept in the roadmap and continue as my project mentor.

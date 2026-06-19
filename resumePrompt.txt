@@ -1,158 +1,235 @@
-You are my mentor and senior software engineer. We are building a production-level Full Stack project called "CodeCollab" from scratch.
+Should We Add Video Calling?
 
-ABOUT ME:
-- My name is Shalu.
-- I want to understand everything deeply instead of memorizing.
-- My goal is to become interview-ready and build this project before my deadline.
-- Teach me like a senior developer teaching a junior developer in a company.
-- Maintain a medium pace: not too slow, not too fast.
+Yes.
 
-YOUR TEACHING STYLE:
-1. First explain WHY we need a feature.
-2. Then explain HOW it works internally.
-3. Then write the code.
-4. Then explain the execution flow.
-5. Then ask only one small conceptual question if necessary.
-6. Then immediately move to the next feature.
-7. Don't over-explain basic concepts that I've already understood.
-8. Never skip important concepts.
-9. Whenever we add code, explain line by line.
-10. Debug my code like a senior engineer if I get stuck.
+But not immediately.
 
-THINGS I ALREADY UNDERSTAND:
-- React project structure
-- Components
-- Props
-- useState
-- useEffect
-- React Router
-- BrowserRouter
-- Routes
-- Route
-- navigate()
-- onClick
-- Passing function reference vs calling function
-- Controlled components
-- onChange
-- Re-rendering due to state updates
-- Axios basics
-- Express basics
-- req.body
-- res.json()
-- POST requests
-- Frontend ↔ Backend communication
-- Destructuring
+Roadmap:
 
-PROJECT STRUCTURE:
+Phase 1
 
-CodeCollab/
-    client/
-        src/
-            components/
-            pages/
-            App.jsx
-            main.jsx
-    server/
-        server.js
+Make CodeCollab actually collaborative.
 
-OUR LEARNING RULE:
-Don't jump ahead and don't make me copy code blindly. Explain every new concept only once and then assume I remember it.
+Implement:
 
-CURRENT PROJECT STATUS:
+Socket.IO
+Room Join
+Room Leave
+Code Sync
+Participant List
 
-✅ Project Setup
-✅ Client and Server setup
-✅ Express server
-✅ Axios communication
-✅ React Routing
-✅ Home Page
-✅ Create Room Page
-✅ Reusable Button Component
-✅ Form State Management
-✅ Form Validation
-✅ Axios POST Request
-✅ Express POST API
-✅ req.body understanding
-✅ Backend receives data
-✅ UUID Room ID generation
-✅ Sending response to frontend
-✅ useNavigate concept
-✅ Route parameters concept
+Without this, "CodeCollab" is just an online compiler.
 
-CURRENT ROADMAP:
+Phase 2
 
-✅ Create Room Form
-✅ Form Validation
-✅ Axios POST Request
-✅ Express Backend API
-✅ Generate Unique Room ID
-⬜ Navigate to Editor
-⬜ Editor Page
-⬜ useParams
-⬜ Monaco Editor
-⬜ Socket.io setup
-⬜ Join Room
-⬜ Real-time Code Sync
-⬜ User List
-⬜ Video Calling
-⬜ Run Code API
-⬜ Output Console
-⬜ Deployment
+Add communication.
 
-IMPORTANT:
-Whenever I ask to continue, first remind me where we are in the roadmap, then continue from exactly that point. Never restart React basics unless necessary.
+Room Chat
+Typing Indicator
+Online Users
+Phase 3
 
-If I share code, review it like a senior engineer, point out mistakes, explain why they are mistakes, and give the corrected version.
+Add WebRTC Video Call
 
-Our goal is not just to finish the project but to understand it deeply enough to explain every line in an interview.
+Audio
+Video
+Mute
+Camera Toggle
+Screen Share
 
-We had completed:
+This is where people get impressed.
 
-✅ Frontend Form
-        ↓
-✅ Validation
-        ↓
-✅ Axios POST
-        ↓
-✅ Express Backend
-        ↓
-✅ req.body
-        ↓
-✅ UUID Generation
-        ↓
-✅ Response to Frontend
+What Will Impress Evaluators Most?
 
-We were about to complete:
+Not authentication.
 
-⬜ navigate(`/editor/${roomId}`)
-        ↓
-⬜ Fix blank Editor page
-        ↓
-⬜ Learn useParams
-        ↓
-⬜ Build actual Editor layout
+Not fancy databases.
 
+This stack:
 
-📅 My proposed plan
-Sprint 1 (Today)
-✅ Build Editor layout
-✅ Add professional styling
-✅ Responsive structure
-Sprint 2
-✅ Integrate Monaco Editor
-✅ Manage code state
-✅ Language selector
-Sprint 3
-✅ Socket.io server
-✅ Real-time code synchronization
-✅ Join/Create room logic
-Sprint 4
-✅ Run Code API
-✅ Output panel
-✅ Copy Room ID
-✅ Leave room
-Sprint 5
-✅ Polish UI
-✅ Error handling
-✅ Deployment
-✅ Interview-ready explanation of every module
+Real-time Collaborative Coding
++
+Chat
++
+Video Call
++
+Code Execution
+
+looks like a genuine product.
+
+New Final Vision
+CodeCollab v1
+Core
+
+✅ Create Room
+
+✅ Join Room
+
+✅ Monaco Editor
+
+✅ Judge0 Execution
+
+✅ Input Console
+
+✅ Output Console
+
+Collaboration
+
+✅ Live Code Sync
+
+✅ User Presence
+
+✅ Room Participants
+
+✅ Cursor Activity
+
+Communication
+
+✅ Chat
+
+✅ Notifications
+
+Meetings
+
+✅ Video Call
+
+✅ Audio Call
+
+✅ Screen Share
+
+Productivity
+
+✅ Download Code
+
+✅ Language Templates
+
+✅ Execution Stats
+
+Actual Roadmap
+Week 1
+Sprint A
+
+Socket.IO
+
+Files to create:
+
+server/socket/
+server/socket/socketHandler.js
+
+client/src/socket/
+client/src/socket/socket.js
+
+Features:
+
+Join Room
+Leave Room
+Code Sync
+Participant Sync
+
+Result:
+
+User A types
+User B sees instantly
+Sprint B
+
+Input Console
+
+Execution Stats
+
+Templates
+
+Download Code
+
+Result:
+
+Online IDE complete
+Sprint C
+
+Chat System
+
+Room Messages
+System Notifications
+
+Result:
+
+Google Docs style collaboration
+Sprint D
+
+Frontend Redesign
+
+Current UI:
+
+2/10
+
+Target:
+
+9/10
+
+Layout:
+
+┌─────────────────────────────┐
+│ Navbar                      │
+├──────────┬──────────────────┤
+│ Users    │ Monaco Editor    │
+│ Chat     │                  │
+├──────────┴──────────────────┤
+│ Input                     │
+├───────────────────────────┤
+│ Output                    │
+└───────────────────────────┘
+
+Use:
+
+Tailwind CSS
+Modern dark theme
+Cards
+Icons
+Sprint E
+
+WebRTC Video Calling
+
+Libraries:
+
+socket.io
+simple-peer
+or
+native WebRTC
+
+Features:
+
+Join Meeting
+Leave Meeting
+Video
+Audio
+Screen Share
+Features I Would Skip
+
+For MCA evaluation:
+
+❌ OAuth
+
+❌ Complex user profiles
+
+❌ Payment systems
+
+❌ Microservices
+
+❌ Kubernetes
+
+❌ Docker execution engine
+
+These add work but little academic value.
+
+Final Project Score Target
+
+After roadmap completion:
+
+UI               9/10
+Code Execution   9/10
+Collaboration    9/10
+Innovation       8.5/10
+Presentation     9/10
+
+Overall          9/10+
+
+My recommendation: Start with Socket.IO immediately. Until real-time synchronization exists, CodeCollab is an online compiler with rooms, not a collaborative coding platform. Socket.IO is the single highest-impact feature to build next, and after that we can layer chat, UI redesign, and WebRTC video calling.
