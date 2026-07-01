@@ -6,9 +6,9 @@ function CodeEditor({ code, setCode }) {
 
         <Editor
             height="100%"
-            defaultLanguage="java"
+            language="java"
             value={code}
-            onChange={(value) => setCode(value)}
+            onChange={(value) => setCode(value || "")}
             theme="vs-dark"
         />
 
